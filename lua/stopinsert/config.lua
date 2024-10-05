@@ -9,7 +9,6 @@ M.config = {
       "lspinfo",
       "mason",
       "neo%-tree*",
-      "dashboard",
    },
 }
 
