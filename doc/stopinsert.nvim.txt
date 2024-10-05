@@ -3,16 +3,11 @@
 ==============================================================================
 Table of Contents                          *stopinsert.nvim-table-of-contents*
 
-1. stopinsert.nvim                           |stopinsert.nvim-stopinsert.nvim|
-  - Intro                              |stopinsert.nvim-stopinsert.nvim-intro|
-  - Installation                |stopinsert.nvim-stopinsert.nvim-installation|
-  - Configuration              |stopinsert.nvim-stopinsert.nvim-configuration|
+  - Intro                                              |stopinsert.nvim-intro|
+  - Installation                                |stopinsert.nvim-installation|
+  - Configuration                              |stopinsert.nvim-configuration|
 
-==============================================================================
-1. stopinsert.nvim                           *stopinsert.nvim-stopinsert.nvim*
-
-
-INTRO                                  *stopinsert.nvim-stopinsert.nvim-intro*
+INTRO                                                  *stopinsert.nvim-intro*
 
 `stopinsert` is a vim command (see vimdoc
 <https://vimdoc.sourceforge.net/htmldoc/insert.html>) that works like typing
@@ -22,7 +17,7 @@ This plugin automatically kicks you out of Insert mode after certain amount of
 time of inactivity.
 
 
-INSTALLATION                    *stopinsert.nvim-stopinsert.nvim-installation*
+INSTALLATION                                    *stopinsert.nvim-installation*
 
 1. Let your favourite package manager do the work:
 
@@ -41,7 +36,7 @@ INSTALLATION                    *stopinsert.nvim-stopinsert.nvim-installation*
 <
 
 
-CONFIGURATION                  *stopinsert.nvim-stopinsert.nvim-configuration*
+CONFIGURATION                                  *stopinsert.nvim-configuration*
 
   --------------------------------------------------------------------------------------------------------------------------------------
   Items                    Type       Default Value                                                                     Description
