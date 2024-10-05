@@ -29,7 +29,7 @@ require("stopinsert").setup()
 | Items                 | Type      | Default Value      | Description    |
 | --------------------- | --------- | ------------------ | -------------- |
 | `idle_time_ms`        | number    | `5000` (5 seconds) | Maximum time (in milliseconds) before you are forced out of Insert mode back to Normal mode. |
-| `disabled_filetypes`  | table     | `{ "TelescopePrompt", "checkhealth", "help", "lspinfo", "mason", "neo%-tree*", }` | List of filetypes to exclude the effect of this plugin. |
+| `disabled_filetypes`  | list     | `{ "TelescopePrompt", "checkhealth", "help", "lspinfo", "mason", "neo%-tree*", }` | List of filetypes to exclude the effect of this plugin. |
 
 **NOTE:**
 By default, `stopinsert.nvim` excludes a list of filetypes, as shown in the table above. 
