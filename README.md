@@ -1,5 +1,3 @@
-# stopinsert.nvim
-
 ## Intro
 
 `stopinsert` is a vim command (see [vimdoc](https://vimdoc.sourceforge.net/htmldoc/insert.html)) that works like typing `<Esc>` in Insert mode.
