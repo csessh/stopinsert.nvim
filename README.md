@@ -1,0 +1,1 @@
+# stopinsert.nvim
