@@ -8,6 +8,7 @@ function M.setup(opts)
    require("stopinsert.config").set(opts)
 
    vim.api.nvim_create_autocmd("InsertEnter", {
+      group = vim.api.nvim_create_augroup("InsertEnterListener", { clear = true }),
       callback = function()
          if not util.is_filetype_disabled(vim.bo.ft) then
             util.reset_timer()
