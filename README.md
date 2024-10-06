@@ -36,6 +36,18 @@ If you configure this attribute in `opts` with your package manager, like so, yo
 
 Filetypes can also be listed as regex, such as `neo%-tree*`.
 
+## User command 
+
+`stopinsert.nvim` is enabled by default. You can toggle its state on the fly with the following commands:
+
+```
+:StopInsertPlug enable
+:StopInsertPlug disable
+:StopInsertPlug toggle
+```
+
+Each of them does exactly what it says on the tin.
+
 <!-- panvimdoc-ignore-start -->
 ## Contribution
 
