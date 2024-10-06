@@ -1,6 +1,6 @@
 ## Intro
 
-`stopinsert` is a vim command (see [vimdoc](https://vimdoc.sourceforge.net/htmldoc/insert.html)) that works like typing `<Esc>` in Insert mode.
+`stopinsert` is a vim command (see [vimdoc](https://vimdoc.sourceforge.net/htmldoc/insert.html)) that works like hitting `<Esc>` in Insert mode.
 
 This plugin automatically kicks you out of Insert mode after certain amount of time of inactivity.
 
@@ -33,6 +33,8 @@ require("stopinsert").setup()
 By default, `stopinsert.nvim` excludes a list of filetypes, as shown in the table above. 
 
 If you configure this attribute in `opts` with your package manager, like so, your list will replace `stopinsert.nvim` defaults.
+
+Filetypes can also be listed as regex, such as `neo%-tree*`.
 
 <!-- panvimdoc-ignore-start -->
 ## Contribution
