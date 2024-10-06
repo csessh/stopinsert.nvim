@@ -4,6 +4,14 @@
 
 This plugin automatically kicks you out of Insert mode after certain amount of time of inactivity.
 
+<!-- panvimdoc-ignore-start -->
+<h1 align="center">
+    <a href="https://dotfyle.com/plugins/csessh/stopinsert.nvim">
+        <img src="https://dotfyle.com/plugins/csessh/stopinsert.nvim/shield?style=for-the-badge" />
+    </a>
+</h1>
+<!-- panvimdoc-ignore-end -->
+
 ## Installation
 
 1. Let your favourite package manager do the work:
@@ -30,13 +38,13 @@ require("stopinsert").setup()
 | `disabled_filetypes`  | list     | `{ "TelescopePrompt", "checkhealth", "help", "lspinfo", "mason", "neo%-tree*", }` | List of filetypes to exclude the effect of this plugin. |
 
 **NOTE:**
-By default, `stopinsert.nvim` excludes a list of filetypes, as shown in the table above. 
+By default, `stopinsert.nvim` excludes a list of filetypes, as shown in the table above.
 
 If you configure this attribute in `opts` with your package manager, like so, your list will replace `stopinsert.nvim` defaults.
 
 Filetypes can also be listed as regex, such as `neo%-tree*`.
 
-## User command 
+## User command
 
 `stopinsert.nvim` is enabled by default. You can toggle its state on the fly with the following commands:
 
