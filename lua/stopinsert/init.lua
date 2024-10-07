@@ -1,7 +1,6 @@
 local M = {}
-local util = require("stopinsert.util")
-M.enable = true
 
+M.enable = true
 local user_cmds = {
    enable = function()
       M.enable = true
@@ -21,14 +20,18 @@ local user_cmds = {
    end,
 }
 
+local config = require("stopinsert.config")
+local util = require("stopinsert.util")
+
 ---@param opts table
 ---@return nil
 function M.setup(opts)
    opts = opts or {}
-   require("stopinsert.config").set(opts)
+   config.set(opts)
 
+   local plugin_autocmd_group = "StopInsertAutoCmd"
    vim.api.nvim_create_autocmd("InsertEnter", {
-      group = vim.api.nvim_create_augroup("InsertEnterListener", { clear = true }),
+      group = vim.api.nvim_create_augroup(plugin_autocmd_group, { clear = true }),
       callback = function()
          if not M.enable then
             return

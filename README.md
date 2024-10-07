@@ -35,6 +35,8 @@ require("stopinsert").setup()
 | Items                 | Type      | Default Value      | Description    |
 | --------------------- | --------- | ------------------ | -------------- |
 | `idle_time_ms`        | number    | `5000` (5 seconds) | Maximum time (in milliseconds) before you are forced out of Insert mode back to Normal mode. |
+| `show_popup_msg`      | boolean   | `true`            | Enable/disable popup message" |
+| `clear_popup_ms`      | number   | `5000`            | Maximum time (in milliseconds) for which the popup message hangs around |
 | `disabled_filetypes`  | list     | `{ "TelescopePrompt", "checkhealth", "help", "lspinfo", "mason", "neo%-tree*", }` | List of filetypes to exclude the effect of this plugin. |
 
 **NOTE:**

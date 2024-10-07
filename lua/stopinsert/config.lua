@@ -2,6 +2,8 @@ local M = {}
 
 M.config = {
    idle_time_ms = 5000,
+   show_popup_msg = true,
+   clear_popup_ms = 5000,
    disabled_filetypes = {
       "TelescopePrompt",
       "checkhealth",
