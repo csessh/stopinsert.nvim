@@ -1,4 +1,5 @@
 local M = {}
+local config = require("stopinsert.config")
 
 --- Create a simple popup message, positioned in the bottom right corner of the buffer
 --- Automatically close this popup after 5 seconds
@@ -33,7 +34,7 @@ function M.show(message)
       if vim.api.nvim_win_is_valid(win) then
          vim.api.nvim_win_close(win, true)
       end
-   end, 5000)
+   end, config.clear_popup_ms)
 end
 
 return M
