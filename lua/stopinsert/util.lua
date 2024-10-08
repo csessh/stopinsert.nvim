@@ -9,7 +9,8 @@ function M.force_exit_insert_mode()
       vim.cmd("stopinsert")
 
       if config.show_popup_msg then
-         popup.show("StopInsertPlug: You were idling in Insert mode. Remeber to <Esc> when you finish editing.")
+         local msg = "StopInsertPlug: You were idling in Insert mode. Remeber to <Esc> when you finish editing."
+         popup.show(msg, config.clear_popup_ms)
       end
    end
 end

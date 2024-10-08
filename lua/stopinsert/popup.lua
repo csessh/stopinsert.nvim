@@ -1,12 +1,12 @@
 local M = {}
-local config = require("stopinsert.config")
 
 --- Create a simple popup message, positioned in the bottom right corner of the buffer
---- Automatically close this popup after 5 seconds
+--- Automatically close this popup after timeout_ms milliseconds
 --- Courtersy of encourage.nvim
 ---@param message string
+---@param timeout_ms number
 ---@return nil
-function M.show(message)
+function M.show(message, timeout_ms)
    local width = #message
    local height = 1
    local buf = vim.api.nvim_create_buf(false, true)
@@ -34,7 +34,7 @@ function M.show(message)
       if vim.api.nvim_win_is_valid(win) then
          vim.api.nvim_win_close(win, true)
       end
-   end, config.clear_popup_ms)
+   end, timeout_ms)
 end
 
 return M
