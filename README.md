@@ -20,7 +20,8 @@ This plugin automatically kicks you out of Insert mode after certain amount of t
 -- lazy.nvim
 {
     "csessh/stopinsert.nvim",
-    opts = {}
+    event = { "InsertEnter" }, -- lazy load
+    opts = {},
 },
 ```
 
