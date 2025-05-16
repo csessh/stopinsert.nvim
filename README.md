@@ -38,6 +38,7 @@ require("stopinsert").setup()
 | `show_popup_msg`      | boolean   | `true`            | Enable/disable popup message" |
 | `clear_popup_ms`      | number   | `5000`            | Maximum time (in milliseconds) for which the popup message hangs around |
 | `disabled_filetypes`  | list     | `{ "TelescopePrompt", "checkhealth", "help", "lspinfo", "mason", "neo%-tree*", }` | List of filetypes to exclude the effect of this plugin. |
+| `stopinsert_guard` | function | `nil` | Optional function that returns a boolean. If true, prevents stopinsert. |
 
 **NOTE:**
 By default, `stopinsert.nvim` excludes a list of filetypes, as shown in the table above.

@@ -6,10 +6,15 @@ local popup = require("stopinsert.popup")
 ---@return nil
 function M.force_exit_insert_mode()
    if vim.fn.mode() == "i" then
+      if type(config.stopinsert_guard) == "function" and config.stopinsert_guard() then
+         return
+      end
+
       vim.cmd("stopinsert")
 
       if config.show_popup_msg then
-         local msg = "StopInsertPlug: You were idling in Insert mode. Remember to <Esc> when you finish editing."
+         local msg =
+            "StopInsertPlug: You were idling in Insert mode. Remember to <Esc> when you finish editing."
          popup.show(msg, config.clear_popup_ms)
       end
    end
