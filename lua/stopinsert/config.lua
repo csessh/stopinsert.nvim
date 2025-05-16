@@ -22,7 +22,7 @@ M.config = {
    },
 
    --- Optional function that returns a boolean. If true, prevents stopinsert.
-   stopinsert_guard = nil,
+   guard_func = nil,
 }
 
 ---@param user_config table

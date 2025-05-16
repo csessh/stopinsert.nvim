@@ -6,7 +6,7 @@ local popup = require("stopinsert.popup")
 ---@return nil
 function M.force_exit_insert_mode()
    if vim.fn.mode() == "i" then
-      if type(config.stopinsert_guard) == "function" and config.stopinsert_guard() then
+      if type(config.guard_func) == "function" and config.guard_func() then
          return
       end
 
