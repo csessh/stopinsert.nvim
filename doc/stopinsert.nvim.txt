@@ -27,6 +27,7 @@ INSTALLATION                                    *stopinsert.nvim-installation*
     -- lazy.nvim
     {
         "csessh/stopinsert.nvim",
+        event = { "InsertEnter" }, -- lazy load
         dependencies = {
             -- "hrsh7th/nvim-cmp",
             "saghen/blink.cmp",
