@@ -73,7 +73,7 @@ CONFIGURATION                                  *stopinsert.nvim-configuration*
                                                                                                                         to Normal mode.
 
   show_popup_msg           boolean    true                                                                              Enable/disable
-                                                                                                                        popup message”
+                                               popup message
 
   clear_popup_ms           number     5000                                                                              Maximum time (in
                                                                                                                         milliseconds)
