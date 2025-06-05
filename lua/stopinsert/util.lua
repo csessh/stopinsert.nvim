@@ -21,10 +21,19 @@ function M.force_exit_insert_mode()
 end
 
 ---@return nil
-function M.reset_timer()
+function M.clear_timer()
    if timer then
       timer:stop()
+      if timer.close then
+         timer:close()
+      end
+      timer = nil
    end
+end
+
+---@return nil
+function M.reset_timer()
+   M.clear_timer()
    timer = vim.defer_fn(M.force_exit_insert_mode, config.idle_time_ms)
 end
 
