@@ -4,14 +4,6 @@
 
 This plugin automatically kicks you out of Insert mode after certain amount of time of inactivity.
 
-<!-- panvimdoc-ignore-start -->
-<h1 align="center">
-    <a href="https://dotfyle.com/plugins/csessh/stopinsert.nvim">
-        <img src="https://dotfyle.com/plugins/csessh/stopinsert.nvim/shield?style=for-the-badge" />
-    </a>
-</h1>
-<!-- panvimdoc-ignore-end -->
-
 ## Installation
 
 1. Let your favourite package manager do the work:
