@@ -91,3 +91,14 @@ All contributions are most welcome! Please open a PR or create an [issue](https:
 
 - Follow the coding style of [LuaRocks](https://github.com/luarocks/lua-style-guide).
 - Make sure you format the code with [StyLua](https://github.com/JohnnyMorganz/StyLua) before PR.
+
+### Testing
+
+Run the test suite with [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) installed.
+From the project root execute:
+
+```sh
+make test
+```
+
+This command uses `plenary.busted` to run the specs found in the `tests/` directory.
