@@ -109,13 +109,14 @@ USER COMMAND                                    *stopinsert.nvim-user-command*
 with the following commands:
 
 >
-    :StopInsertPlug enable
-    :StopInsertPlug disable
-    :StopInsertPlug toggle
-    :StopInsertPlug status
+   :StopInsertPlug enable
+   :StopInsertPlug disable
+   :StopInsertPlug toggle
+   :StopInsertPlug status
 <
 
-Each of them does exactly what it says on the tin.
+Each of them does exactly what it says on the tin. Disabling the plugin clears
+any pending idle timer so you won't be forced back to Normal mode unexpectedly.
 
 
 CONTRIBUTION                                    *stopinsert.nvim-contribution*

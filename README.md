@@ -80,7 +80,8 @@ Filetypes can also be listed as regex, such as `neo%-tree*`.
 :StopInsertPlug status
 ```
 
-Each of them does exactly what it says on the tin.
+Each of them does exactly what it says on the tin. When the plugin is disabled,
+any pending idle timer is cleared so you won't be forced back to Normal mode.
 
 ## Contribution
 
