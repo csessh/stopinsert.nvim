@@ -1,23 +1,15 @@
 local M = {}
 
 M.enable = true
-local util = require("stopinsert.util")
 local user_cmds = {
    enable = function()
       M.enable = true
-      util.reset_timer()
    end,
    disable = function()
       M.enable = false
-      util.clear_timer()
    end,
    toggle = function()
       M.enable = not M.enable
-      if M.enable then
-         util.reset_timer()
-      else
-         util.clear_timer()
-      end
    end,
    status = function()
       if M.enable then
@@ -29,6 +21,7 @@ local user_cmds = {
 }
 
 local config = require("stopinsert.config")
+local util = require("stopinsert.util")
 
 ---@param opts table
 ---@return nil
